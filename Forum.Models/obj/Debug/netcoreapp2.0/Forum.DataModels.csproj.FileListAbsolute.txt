@@ -1,0 +1,9 @@
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\bin\Debug\netcoreapp2.0\Forum.DataModels.deps.json
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\bin\Debug\netcoreapp2.0\Forum.DataModels.dll
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\bin\Debug\netcoreapp2.0\Forum.DataModels.pdb
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.DataModels.csprojAssemblyReference.cache
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.DataModels.AssemblyInfoInputs.cache
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.DataModels.AssemblyInfo.cs
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.DataModels.csproj.CoreCompileInputs.cache
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.DataModels.dll
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.DataModels.pdb

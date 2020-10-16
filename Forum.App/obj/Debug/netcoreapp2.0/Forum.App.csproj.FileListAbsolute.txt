@@ -1,0 +1,17 @@
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.App.deps.json
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.App.runtimeconfig.json
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.App.runtimeconfig.dev.json
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.App.dll
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.App.pdb
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.Data.dll
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.DataModels.dll
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.Data.pdb
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\bin\Debug\netcoreapp2.0\Forum.DataModels.pdb
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.csprojAssemblyReference.cache
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.AssemblyInfoInputs.cache
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.AssemblyInfo.cs
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.csproj.CoreCompileInputs.cache
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.csproj.CopyComplete
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.dll
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.pdb
+D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.genruntimeconfig.cache

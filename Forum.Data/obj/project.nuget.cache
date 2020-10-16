@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "o2tUYdVf6WCISgSy5UhfY6Q5qd69vmiO7uHfxr7VeOd1Wqu48ueChsI4E6qqHlk0jlhGwQnEVNuelpuLf3Zvew==",
+  "success": true,
+  "projectFilePath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\Forum.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\10\\.nuget\\packages\\csvhelper\\6.1.1\\csvhelper.6.1.1.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.0.0\\microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.0.0\\microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\10\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

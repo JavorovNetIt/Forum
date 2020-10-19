@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QGKA1G8r0iDlpiZokCLiPQGLmxm6HHd94RayTV7jJAZBuc5Nl8LWkNCWS+n4Zt5euiKlp4Hwyg96/PuWr/zlWQ==",
+  "dgSpecHash": "k/RDs2iJb9tKNFSyYGUKPCOzO4aADrZtk/wAT0HffUM5cenhuRRjRcJZpUhP8eUUmhjBUL6tdu6HwvnBVprDBA==",
   "success": true,
-  "projectFilePath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.App\\Forum.App.csproj",
+  "projectFilePath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.App\\Forum.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\10\\.nuget\\packages\\csvhelper\\6.1.1\\csvhelper.6.1.1.nupkg.sha512",
     "C:\\Users\\10\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",

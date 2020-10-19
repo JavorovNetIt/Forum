@@ -15,13 +15,24 @@
 		private ISession session;
 		private ICommandFactory commandFactory;
 
-		public MenuController(ILabelFactory labelFactory, IForumViewEngine viewEngine)
+		public MenuController(
+			//ILabelFactory labelFactory,
+			IServiceProvider serviceProvider,
+			IForumViewEngine viewEngine,
+			ISession session,
+			ICommandFactory commandFactory)
 		{
+			this.serviceProvider = serviceProvider;
 			this.viewEngine = viewEngine;
+			this.session = session;
+			this.commandFactory = commandFactory;
 
-			this.CurrentMenu = new MainMenu(null, labelFactory, null);
-			this.RenderCurrentView();
-		}
+			//this.CurrentMenu = new MainMenu(null, labelFactory, null);
+
+			this.InitializeSession();
+           
+            //this.RenderCurrentView();
+        }
 
 		private string Username { get; set; }
 

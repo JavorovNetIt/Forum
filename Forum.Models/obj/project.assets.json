@@ -681,11 +681,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj",
+      "projectUniqueName": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj",
       "projectName": "Forum.DataModels",
-      "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj",
+      "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj",
       "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-      "outputPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\obj\\",
+      "outputPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config",

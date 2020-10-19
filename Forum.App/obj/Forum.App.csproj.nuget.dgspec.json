@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.App\\Forum.App.csproj": {}
+    "D:\\My Projects\\Lectures projects\\Forum\\Forum.App\\Forum.App.csproj": {}
   },
   "projects": {
-    "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.App\\Forum.App.csproj": {
+    "D:\\My Projects\\Lectures projects\\Forum\\Forum.App\\Forum.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.App\\Forum.App.csproj",
+        "projectUniqueName": "D:\\My Projects\\Lectures projects\\Forum\\Forum.App\\Forum.App.csproj",
         "projectName": "Forum.App",
-        "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.App\\Forum.App.csproj",
+        "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.App\\Forum.App.csproj",
         "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-        "outputPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.App\\obj\\",
+        "outputPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp2.0": {
             "projectReferences": {
-              "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\Forum.Data.csproj": {
-                "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\Forum.Data.csproj"
+              "D:\\My Projects\\Lectures projects\\Forum\\Forum.Data\\Forum.Data.csproj": {
+                "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Data\\Forum.Data.csproj"
               },
-              "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj": {
-                "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj"
+              "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj": {
+                "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\Forum.Data.csproj": {
+    "D:\\My Projects\\Lectures projects\\Forum\\Forum.Data\\Forum.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\Forum.Data.csproj",
+        "projectUniqueName": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Data\\Forum.Data.csproj",
         "projectName": "Forum.Data",
-        "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\Forum.Data.csproj",
+        "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Data\\Forum.Data.csproj",
         "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-        "outputPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Data\\obj\\",
+        "outputPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +93,8 @@
         "frameworks": {
           "netcoreapp2.0": {
             "projectReferences": {
-              "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj": {
-                "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj"
+              "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj": {
+                "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj"
               }
             }
           }
@@ -133,14 +133,14 @@
         }
       }
     },
-    "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj": {
+    "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj",
+        "projectUniqueName": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj",
         "projectName": "Forum.DataModels",
-        "projectPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj",
+        "projectPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj",
         "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-        "outputPath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\obj\\",
+        "outputPath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config",

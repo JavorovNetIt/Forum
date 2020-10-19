@@ -10,3 +10,15 @@ D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Data\obj\Debug\netcorea
 D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CopyComplete
 D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.dll
 D:\My Projects\Lectures projects\Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.pdb
+D:\My Projects\Lectures projects\Forum\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.deps.json
+D:\My Projects\Lectures projects\Forum\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.dll
+D:\My Projects\Lectures projects\Forum\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.pdb
+D:\My Projects\Lectures projects\Forum\Forum.Data\bin\Debug\netcoreapp2.0\Forum.DataModels.dll
+D:\My Projects\Lectures projects\Forum\Forum.Data\bin\Debug\netcoreapp2.0\Forum.DataModels.pdb
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csprojAssemblyReference.cache
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.AssemblyInfoInputs.cache
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.AssemblyInfo.cs
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CoreCompileInputs.cache
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CopyComplete
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.dll
+D:\My Projects\Lectures projects\Forum\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N9RiGCCqx+GkUOnA7DhG+JhO/H3xs1pU02OECqJ2fvwT5EAFi2Q24SzdgHbBEciVye729esttYx08OrnmRHeiA==",
+  "dgSpecHash": "cs3C68G8Pee07V4smTT6hxNnbW8nnVVh7bBymqpQHdfHMwuA8pIIsjAR70C2hnelBm23Mov9gWqtfRUNv2H/Kg==",
   "success": true,
-  "projectFilePath": "D:\\My Projects\\Lectures projects\\Workshop-Skeleton\\Forum.Models\\Forum.DataModels.csproj",
+  "projectFilePath": "D:\\My Projects\\Lectures projects\\Forum\\Forum.Models\\Forum.DataModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
     "C:\\Users\\10\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",

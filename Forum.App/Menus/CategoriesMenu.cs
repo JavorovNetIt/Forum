@@ -5,20 +5,42 @@
 
 	using Contracts;
 	using Models;
+    using System;
 
-	public class CategoriesMenu : Menu, IPaginatedMenu
+    public class CategoriesMenu : Menu, IPaginatedMenu
 	{
 		private const int pageSize = 10;
 		private const int categoryNameLength = 36;
 
 		private ILabelFactory labelFactory;
+		private IPostService postService;
+		private ICommandFactory commandFactory;
 
 		private ICategoryInfoViewModel[] categories;
 		private int currentPage;
 
-		//TODO: Inject Dependencies
+        public CategoriesMenu(ILabelFactory labelFactory, IPostService postService, ICommandFactory commandFactory)
+        {
+			this.labelFactory = labelFactory;
+			this.postService = postService;
+			this.commandFactory = commandFactory;
 
-		private int LastPage => this.categories.Length / 11;
+			this.Open();
+		}
+
+        public override void Open()
+        {
+			this.LoadCategories();
+
+            base.Open();
+        }
+
+        private void LoadCategories()
+        {
+			this.categories = this.postService.GetAllCategories().ToArray();
+        }
+
+        private int LastPage => this.categories.Length / 11;
 
 		private bool IsFirstPage => this.currentPage == 0;
 
@@ -90,12 +112,30 @@
 
 		public override IMenu ExecuteCommand()
 		{
-			throw new System.NotImplementedException();
+			ICommand command = null;
+
+			int actualIndex = this.currentPage * 10 + this.currentIndex;
+
+            if (this.currentIndex > 0 && this.currentIndex < 10)
+            {
+				command = this.commandFactory.CreateCommand("ViewCategoryMenu");
+
+			}
+            {
+				command = this.commandFactory.CreateCommand(string.Join("", this.CurrentOption.Text.Split()));
+            }
+
+			return command.Execute(actualIndex.ToString());
+
+
 		}
 
 		public void ChangePage(bool forward = true)
 		{
-			throw new System.NotImplementedException();
+			this.currentPage += forward ? 1 : -1;
+			this.currentIndex = 0;
+
+			this.Open();
 		}
 	}
 }

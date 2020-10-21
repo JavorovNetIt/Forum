@@ -13,13 +13,20 @@
 
 		private ILabelFactory labelFactory;
 		private ISession session;
-
+		private IPostService postService;
 		private IForumViewEngine viewEngine;
 		
 		private int postId;
 		private IPostViewModel post;
 
-		//TODO: Inject Dependencies
+
+        public ViewPostMenu(ILabelFactory labelFactory, ISession session, IPostService postService, IForumViewEngine viewEngine)
+        {
+			this.labelFactory = labelFactory;
+			this.session = session;
+			this.postService = postService;
+			this.viewEngine = viewEngine;
+        }
 
 		public override void Open()
 		{		
@@ -99,12 +106,14 @@
 
 		public void SetId(int id)
 		{
-			throw new System.NotImplementedException();
+			this.postId = id;
+
+			Open();
 		}
 
 		private void LoadPost()
 		{
-			throw new System.NotImplementedException();
+			this.post = this.postService.GetPostViewModel(this.postId);
 		}
 
 		public override IMenu ExecuteCommand()

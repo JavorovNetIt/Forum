@@ -4,8 +4,9 @@
 
 	using Models;
 	using Contracts;
+    using System;
 
-	public class AddReplyMenu : Menu, ITextAreaMenu, IIdHoldingMenu
+    public class AddReplyMenu : Menu, ITextAreaMenu, IIdHoldingMenu
     {
 		private const int authorOffset = 8;
 		private const int leftOffset = 18;
@@ -15,11 +16,24 @@
 		private ILabelFactory labelFactory;
 		private ITextAreaFactory textAreaFactory;
 		private IForumReader reader;
+		private ICommandFactory commandFactory;
+		private IPostService postService;
 
 		private bool error;
 		private IPostViewModel post;
+		private int postId;
 
-		//TODO: Inject Dependencies
+		public AddReplyMenu(ILabelFactory labelFactory, ITextAreaFactory textAreaFactory, IForumReader reader, ICommandFactory commandFactory, IPostService postService)
+		{
+			this.labelFactory = labelFactory;
+			this.textAreaFactory = textAreaFactory;
+			this.reader = reader;
+			this.commandFactory = commandFactory;
+			this.postService = postService;
+
+			this.InitializeTextArea();
+			Open();
+		}
 
 		public ITextInputArea TextArea { get; private set; }
 
@@ -77,12 +91,51 @@
 
 		public void SetId(int id)
 		{
-			throw new System.NotImplementedException();
+			this.postId = id;
+
+			Open();
 		}
 
-		public override IMenu ExecuteCommand()
+        public override void Open()
+        {
+			LoadPost();
+
+            base.Open();
+        }
+
+        private void LoadPost()
+        {
+			this.post = this.postService.GetPostViewModel(this.postId);
+		}
+
+        public override IMenu ExecuteCommand()
 		{
-			throw new System.NotImplementedException();
+			if (this.CurrentOption.IsField)
+			{
+				string fieldInput = " " + this.reader.ReadLine(this.CurrentOption.Position.Left + 1, this.CurrentOption.Position.Top);
+
+				this.Buttons[this.currentIndex] = this.labelFactory.CreateButton(fieldInput, this.CurrentOption.Position, this.CurrentOption.IsHidden, this.CurrentOption.IsField);
+
+				return this;
+			}
+
+			try
+			{
+				string commandName = string.Join("", this.CurrentOption.Text.Split());
+
+				ICommand command = this.commandFactory.CreateCommand(commandName);
+
+				IMenu menu = command.Execute(this.postId.ToString(), this.TextArea.Text);
+
+				return menu;
+			}
+			catch (System.Exception)
+			{
+				this.error = true;
+				this.InitializeStaticLabels(Position.ConsoleCenter());
+
+				return this;
+			}
 		}
 	}
 }

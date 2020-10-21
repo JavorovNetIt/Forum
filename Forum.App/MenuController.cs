@@ -14,10 +14,11 @@
 		private IForumViewEngine viewEngine;
 		private ISession session;
 		private ICommandFactory commandFactory;
+		private ILabelFactory labelFactory;
 
 		public MenuController(
-			//ILabelFactory labelFactory,
-			IServiceProvider serviceProvider,
+            ILabelFactory labelFactory,
+            IServiceProvider serviceProvider,
 			IForumViewEngine viewEngine,
 			ISession session,
 			ICommandFactory commandFactory)
@@ -26,8 +27,9 @@
 			this.viewEngine = viewEngine;
 			this.session = session;
 			this.commandFactory = commandFactory;
+			this.labelFactory = labelFactory;
 
-			//this.CurrentMenu = new MainMenu(null, labelFactory, null);
+			//this.CurrentMenu = new MainMenu(session, labelFactory, commandFactory);
 
 			this.InitializeSession();
            
@@ -39,7 +41,7 @@
 		//Replace CurrentMenu with this after implementing Session
 		//private IMenu CurrentMenu => this.session.CurrentMenu;
 
-		private IMenu CurrentMenu { get; }
+		private IMenu CurrentMenu { get => this.session.CurrentMenu; }
 
 		private void InitializeSession()
 		{
@@ -47,13 +49,16 @@
 				this.serviceProvider.GetService<ILabelFactory>(),
 				this.serviceProvider.GetService<ICommandFactory>()));
 
+			
+
 			this.RenderCurrentView();
 		}
 
 		private void RenderCurrentView()
 		{
-			this.viewEngine.RenderMenu(this.CurrentMenu);
-		}
+            //this.viewEngine.RenderMenu(this.CurrentMenu);
+            this.viewEngine.RenderMenu(this.session.CurrentMenu);
+        }
 
 		public void MarkOption()
 		{

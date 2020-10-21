@@ -36,6 +36,7 @@
 			services.AddSingleton<ISession, Session>();
 			services.AddSingleton<IForumViewEngine, ForumViewEngine>();
 			services.AddSingleton<IMainController, MenuController>();
+			services.AddSingleton<IForumReader, ForumConsoleReader>();
 
 			IServiceProvider serviceProvider = services.BuildServiceProvider();
 

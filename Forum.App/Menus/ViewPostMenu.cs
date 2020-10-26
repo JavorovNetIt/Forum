@@ -15,17 +15,19 @@
 		private ISession session;
 		private IPostService postService;
 		private IForumViewEngine viewEngine;
+		private ICommandFactory commandFactory;
 		
 		private int postId;
 		private IPostViewModel post;
 
 
-        public ViewPostMenu(ILabelFactory labelFactory, ISession session, IPostService postService, IForumViewEngine viewEngine)
+        public ViewPostMenu(ILabelFactory labelFactory, ISession session, IPostService postService, IForumViewEngine viewEngine, ICommandFactory commandFactory)
         {
 			this.labelFactory = labelFactory;
 			this.session = session;
 			this.postService = postService;
 			this.viewEngine = viewEngine;
+			this.commandFactory = commandFactory;
         }
 
 		public override void Open()
@@ -118,7 +120,13 @@
 
 		public override IMenu ExecuteCommand()
 		{
-			throw new System.NotImplementedException();
+			string commandName = string.Join("", this.CurrentOption.Text.Split());
+			ICommand command = this.commandFactory.CreateCommand(commandName);
+			IMenu view = command.Execute(this.postId.ToString());
+
+			this.viewEngine.ResetBuffer();
+
+			return view;
 		}
 
 		private void ExtendBuffer()

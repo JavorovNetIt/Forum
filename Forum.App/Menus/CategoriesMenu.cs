@@ -121,6 +121,7 @@
 				command = this.commandFactory.CreateCommand("ViewCategoryMenu");
 
 			}
+			else
             {
 				command = this.commandFactory.CreateCommand(string.Join("", this.CurrentOption.Text.Split()));
             }

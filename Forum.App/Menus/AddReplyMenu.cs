@@ -30,9 +30,6 @@
 			this.reader = reader;
 			this.commandFactory = commandFactory;
 			this.postService = postService;
-
-			this.InitializeTextArea();
-			Open();
 		}
 
 		public ITextInputArea TextArea { get; private set; }
@@ -93,19 +90,22 @@
 		{
 			this.postId = id;
 
-			Open();
+			LoadPost();
 		}
 
-        public override void Open()
-        {
-			LoadPost();
+   //     public override void Open()
+   //     {
+			//LoadPost();
 
-            base.Open();
-        }
+   //         base.Open();
+   //     }
 
         private void LoadPost()
         {
+
 			this.post = this.postService.GetPostViewModel(this.postId);
+			this.InitializeTextArea();
+			Open();
 		}
 
         public override IMenu ExecuteCommand()
@@ -125,11 +125,11 @@
 
 				ICommand command = this.commandFactory.CreateCommand(commandName);
 
-				IMenu menu = command.Execute(this.postId.ToString(), this.TextArea.Text);
+				IMenu menu = command.Execute(this.TextArea.Text, this.postId.ToString());
 
 				return menu;
 			}
-			catch (System.Exception)
+			catch (System.Exception e)
 			{
 				this.error = true;
 				this.InitializeStaticLabels(Position.ConsoleCenter());

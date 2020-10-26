@@ -53,7 +53,8 @@
 
             if (category == null)
             {
-                category = new Category(postCategory);
+                int categoryId = this.forumData.Categories.LastOrDefault()?.Id + 1 ?? 1;
+                category = new Category(categoryId, postCategory, new List<int>());
                 this.forumData.Categories.Add(category);
             }
 
@@ -62,7 +63,24 @@
 
         public void AddReplyToPost(int postId, string replyContents, int userId)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrWhiteSpace(replyContents))
+            {
+                throw new ArgumentException("Cannot add an empty reply");
+            }
+
+            Post post = this.forumData.Posts.Find(p => p.Id == postId);
+            User author = this.userService.GetUserById(userId);
+
+            int replyId = this.forumData.Replies.LastOrDefault()?.Id + 1 ?? 1;
+
+            Reply reply = new Reply(replyId, replyContents, userId, postId);
+
+            this.forumData.Replies.Add(reply);
+
+            post.Replies.Add(reply.Id);
+
+            this.forumData.SaveChanges();
+
         }
 
         public IEnumerable<ICategoryInfoViewModel> GetAllCategories()
@@ -76,7 +94,7 @@
 
         public string GetCategoryName(int categoryId)
         {
-            string categoryName = this.forumData.Categories.First(c => c.Id == categoryId)?.Name;
+            string categoryName = this.forumData.Categories.Find(c => c.Id == categoryId)?.Name;
 
             if (string.IsNullOrEmpty(categoryName))
             {
